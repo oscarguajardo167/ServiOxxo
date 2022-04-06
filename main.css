@@ -1,0 +1,261 @@
+h1 {
+  margin: 0;
+}
+.center{
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.img-oxxo{
+  border-radius: 50%;
+  width: 300px;
+  margin-top: 30px;
+}
+.wc-header{
+  margin-top: 24px;
+}
+.container{
+  max-width: 400px;
+  background: #DEDEDE;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+body{
+  display: block;
+}
+
+.reglas {
+  display:flex;
+  margin: 50px auto;
+  width: 1200px;
+  justify-content: space-between;
+}
+.objetivos h1{
+  margin-bottom: 15px;
+}
+
+.instrucciones h1{
+  margin-bottom: 15px;
+}
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  padding: 10px 50px;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #b400ff;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.juego-container{
+  width: 800px;
+  height: 530px;
+  border: 1px solid #000000;
+  position: relative;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cajas-container{
+  width: 100%;
+  height: 240px;
+  background: #F0F3F4;
+  display: flex;
+  padding: 20px 60px;
+  justify-content: space-between;
+}
+
+.score-container{
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #3498DB;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 10px 10px 0;
+}
+.score{
+  color: white;
+  font-weight: bold;
+  height: 100%;
+  margin: 0;
+}
+
+.caja{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.container-compra{
+   width: 50px;
+   height: 100px;
+   border: 1px solid gray;
+   margin-right: 20px;
+   border-radius: 5px;
+}
+
+.status-bar{
+  width: 90%;
+  height: 20px;
+  border: 1px solid gray;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.total-money{
+  width: 90%;
+  height: 20px;
+  border: 1px solid gray;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.button-cliente{
+  text-align: center;
+  width: 90%;
+  border-radius: 10px;
+  background: #58D68D;
+  border: 0px;
+}
+
+.button-cliente:disabled{
+  background: #D4EFDF;
+}
+
+.fila_container{
+  background: #D6DBDF;
+  width: 100%;
+  height: 220px;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.perdido_container{
+  position: relative;
+  left: 10px;
+  transform: translateY(-205px);
+  width: 120px;
+  height: 150px;
+}
+
+.fila{
+  position: relative;
+  left: 250px;
+  transform: translateY(-135px);
+  width: 450px;
+  height: 150px;
+  display: flex;
+  flex-direction:row-reverse;
+}
+
+.wating-person{
+  width: 80px;
+  height: 100px;
+  margin-left: 10px;
+}
+
+.wating-person img{
+  width: 150%;
+  height: 100%;
+}
+
+.start-container{
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 10px 0 10px;
+}
+
+.life-container{
+  text-align: center;
+  position: absolute;
+  height: 60px;
+  width: 180px;
+  left: 30%;
+  bottom: 0;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 10px 0 10px;
+}
+
+.header-juego {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  width: 800px;
+}
+
+.header-juego a {
+  color: black;
+  font-size: 24px;
+}
+
+.header-juego a:hover {
+  color: #58D68D;
+}
+
+.return {
+  background: #b400ff;
+  padding: 10px 50px;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.time-container{
+  width: 120px;
+  height: 60px;
+  margin-left:10px;
+  position: absolute;
+  bottom: 150px;
+  background: blue;
+}
+
+#time-to-wait{
+  color:white;
+}
